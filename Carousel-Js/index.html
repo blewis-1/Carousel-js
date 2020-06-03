@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- SlideShow Container  -->
+    <div class="slideshow-Container">
+        <div class="mySlides div_1 fade"> <img src="/slider1.png" alt=""></div>
+        <div class="mySlides div_2 fade"> <img src="/slider2.png" alt=""></div>
+        <div class="mySlides div_3 fade"> <img src="/slider3.png" alt=""></div>
+        <div class="mySlides div_4 fade"> <img src="/slider2.png" alt=""></div>
+
+        <!-- Control Arrows -->
+        <a class="prev" onclick="previousSlides(1)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                <path
+                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.568 18.005l-1.414-1.415 4.574-4.59-4.574-4.579 1.414-1.416 5.988 5.995-5.988 6.005z" />
+            </svg>
+        </a>
+        <a class="next" onclick="plusSlides(1)">
+             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                viewBox="0 0 24 24">
+                <path
+                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.568 18.005l-1.414-1.415 4.574-4.59-4.574-4.579 1.414-1.416 5.988 5.995-5.988 6.005z" />
+            </svg>
+        </a>
+
+        <!-- Dot indicators -->
+        <div class="dot-container">
+            <span onclick="currentSlide(1)" class="dot"></span>
+            <span onclick="currentSlide(2)" class="dot"></span>
+            <span onclick="currentSlide(3)" class="dot"></span>
+            <span onclick="currentSlide(4)" class="dot"></span>
+        </div>
+    </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.slideshow-Container {
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
+  position: relative;
+  width: 90%;
+}
+
+.div_1,
+.div_2,
+.div_3,
+.div_4 {
+  border: 1px solid #ebebeb;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+img {
+  width: 100%;
+}
+
+/* Control Arrows  */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  top: 50%;
+  margin-top: -22px;
+  color: white;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 20px;
+  transition: background-color 0.6s ease-in-out;
+  border-radius: 5px;
+}
+
+
+
+.prev {
+  left: 0;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  fill: #3498DB;
+}
+
+.prev:hover {
+  fill: #ffffff;
+
+}
+
+.next {
+  right: 0;
+  fill: #3498DB;
+}
+.next:hover {
+  fill: #ffffff;
+}
+
+/* Dot Indicators */
+.dot-container {
+  position: absolute;
+  right: 50%;
+  top: 90%;
+
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 10px;
+  margin: 0 2px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover,
+.active {
+  background-color: #3498DB;
+}
+img {
+  width: 100%;
+}
+
+.fade {
+  /* -webkit-animation-name: fade; */
+  -webkit-animation-duration: 1.5s;
+  animation: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.7;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
