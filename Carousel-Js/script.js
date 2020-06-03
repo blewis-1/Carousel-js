@@ -43,4 +43,7 @@ const currentSlide = (n) => {
 };
 
 
-showSlides(slideIndex);
+setInterval(() => {
+  showSlides(slideIndex);
+  slideIndex++;
+}, 3000);
